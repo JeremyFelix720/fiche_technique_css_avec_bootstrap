@@ -1,0 +1,139 @@
+body {
+    /*width: 80%;*/
+    /*margin: auto;
+    display: flex;
+    flex-direction: row;*/
+}
+
+p, ul, h1, h2, h3, h4, h5, h6, a, table {
+    font-family: Tahoma, sans-serif;
+}
+
+p, ul, a {
+    font-size: 14px;
+    margin: 0px;
+}
+
+/*
+ul {
+    padding-left: 25px;
+}
+
+li {
+    padding: 5px 0px;
+}
+*/
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size:24px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size:18px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 0px 20px;
+}
+
+#left_column {
+    /*width: 35%;*/
+    height: 100vh;
+    /*padding: 20px 0px;
+    background-color: lightgray;
+    /*background-color: white;*/
+
+}
+
+#left_column nav {
+    position: fixed;
+    overflow-y: scroll;
+    height: 100vh; /* Quand cette ligne manquait et l'ascensseur ne s'affichait pas.*/
+    background-color: white;
+
+
+}
+
+/*
+#left_column ul li {
+    list-style-type: none;
+
+}
+
+table {
+    border-collapse: collapse;
+}
+
+
+table th {
+    background-color: lightgray;
+    text-align: left;
+}
+
+table th, table td {
+    width: 500px;
+    max-width: 100%;
+    padding: 10px;
+    border: 1px solid grey;
+}
+
+.preview_and_code_blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.preview_and_code_blocks div {
+    width: 45%;
+    border: 1px solid grey;
+    padding: 10px;
+}
+*/
+
+
+#right_column {
+    /*margin-left: 240px;*/
+    /*width: 65%;*/
+    padding: 20px;
+}
+
+/*
+#right_column article {
+    margin-top: 100px;
+}
+*/
+
+@media screen and (max-width: 680px) {
+
+    body section {
+        flex-wrap: wrap;
+    }
+
+    #left_column, #left_column nav, #right_column {
+        width: 100%;
+    }
+
+    #left_column, #left_column nav {
+        height: 280px;
+    }
+
+    #left_column nav{
+        border-bottom: 1px solid black;
+        overflow-x: hidden;
+    }
+
+    
+
+  }
