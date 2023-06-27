@@ -48,13 +48,16 @@ h3 {
     padding: 0px 20px;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 #left_column {
     /*width: 35%;*/
     height: 100vh;
     /*padding: 20px 0px;
     background-color: lightgray;
     /*background-color: white;*/
-
 }
 
 #left_column nav {

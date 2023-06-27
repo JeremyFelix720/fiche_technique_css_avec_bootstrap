@@ -59,7 +59,7 @@
 
         <h2>Propriétés CSS</h2>
         <table class="table table-striped">
-            <thead>
+            <thead class="bold">
                 <tr>
                     <td>
                         Noms
@@ -73,26 +73,30 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr id="align-items">
                     <td>
-                        cellule 1
+                        align-items
                     </td>
                     <td>
-                        cellule 2
+                        Alignement des objets sur l'axe secondaire de leur conteneur.
                     </td>
                     <td>
-                        cellule 3
+                        <div style="display:flex; align-items:center; border:1px solid black; width:100px; height:100px;">
+                            <div style="width:20px; height:20px; background-color:red;"></div>
+                            <div style="width:20px; height:20px; background-color:green;"></div>
+                            <div style="width:20px; height:20px; background-color:blue;"></div>
+                        </div>
                     </td>
                 </tr>
-                <tr>
+                <tr id="background-color">
                     <td>
-                        cellule 1
+                        background-color
                     </td>
                     <td>
-                        cellule 2
+                        Couleur de l'arrière-plan.
                     </td>
                     <td>
-                        cellule 3
+                        <div style="width:100px; height:100px; background-color:grey;"></div>
                     </td>
                 </tr>
                 <tr>
@@ -134,7 +138,7 @@
 
           <h2>Sélecteurs CSS</h2>
           <table class="table table-striped">
-              <thead>
+              <thead class="bold">
                   <tr>
                       <td>
                           Noms
