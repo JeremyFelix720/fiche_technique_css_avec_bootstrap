@@ -1,25 +1,27 @@
-# Liste de propriétés CSS
+# Liste de propriétés CSS (triées dans l'ordre alphabétique)
 
-- color
-- background-color
--
--
-- width
-- padding
-- margin
-- 
--
--
-- font-size
-- font-weight
-- text-decoration
-- 
-- 
-- display
-- flex-direction
-- justify-content
-- 
--
+align-items
+background-color
+background-image
+background-position
+background-repeat
+border
+color
+display
+flex-direction
+flex-wrap
+font-family
+font-size
+font-style
+font-weight
+justify-content
+margin
+overflow
+padding
+text-align
+text-decoration
+width
+
 
 
 # Liste de selecteurs CSS
