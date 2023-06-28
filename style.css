@@ -52,6 +52,14 @@ h3 {
     font-weight: bold;
 }
 
+.example_blocks {
+    display:flex;
+    border:1px solid black;
+    width:100px;
+    height:100px;
+    padding: 10px;
+}
+
 #left_column {
     /*width: 35%;*/
     height: 100vh;
@@ -115,8 +123,14 @@ table th, table td {
 /*
 #right_column article {
     margin-top: 100px;
+}*/
+
+
+a.list-group-item:hover, a.list-group-item:focus {
+    background-color: #0d6efd;
+    color: white;
 }
-*/
+
 
 @media screen and (max-width: 680px) {
 
@@ -130,6 +144,7 @@ table th, table td {
 
     #left_column, #left_column nav {
         height: 280px;
+        position: absolute;
     }
 
     #left_column nav{
@@ -137,6 +152,8 @@ table th, table td {
         overflow-x: hidden;
     }
 
-    
-
+    #right_column {
+        position: absolute;
+        top: 280px;
+    }
   }
