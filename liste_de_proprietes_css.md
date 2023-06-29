@@ -14,6 +14,7 @@ font-family
 font-size
 font-style
 font-weight
+height
 justify-content
 margin
 overflow
@@ -21,6 +22,11 @@ padding
 text-align
 text-decoration
 width
+
+
+
+
+
 
 
 

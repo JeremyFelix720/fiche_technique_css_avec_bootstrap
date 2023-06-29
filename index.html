@@ -9,8 +9,8 @@
 </head>
 <body>
 <section class="d-flex flex-row justify-content-between">
-    <section id="left_column" class="col-4 d-flex">
-        <nav class="col-4">
+    <section id="left_column" class="col-3 d-flex">
+        <nav class="col-3">
             <h3>Propriétés CSS</h3>
             <div class="list-group">
                 <a href="#align-items" class="list-group-item list-group-item-action">align-items</a>
@@ -25,6 +25,7 @@
                 <a href="#font-size" class="list-group-item list-group-item-action">font-size</a>
                 <a href="#font-style" class="list-group-item list-group-item-action">font-style</a>
                 <a href="#font-weight" class="list-group-item list-group-item-action">font-weight</a>
+                <a href="#height" class="list-group-item list-group-item-action">height</a>
                 <a href="#justify-content" class="list-group-item list-group-item-action">justify-content</a>
                 <a href="#margin" class="list-group-item list-group-item-action">margin</a>
                 <a href="#overflow" class="list-group-item list-group-item-action">overflow</a>
@@ -32,25 +33,12 @@
                 <a href="#text-align" class="list-group-item list-group-item-action">text-align</a>
                 <a href="#text-decoration" class="list-group-item list-group-item-action">text-decoration</a>
                 <a href="#width" class="list-group-item list-group-item-action">width</a>
-            </div>
-
-            <h3>Sélecteurs CSS</h3>
-            <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-                <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-                <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-                <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-                <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-                <a href="#" class="list-group-item list-group-item-action">A second link item</a>
-                <a href="#" class="list-group-item list-group-item-action">A third link item</a>
-                <a href="#" class="list-group-item list-group-item-action">A third link item</a>
-                <a href="#" class="list-group-item list-group-item-action">A third link item</a>
-                <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+            
             </div>
         </nav>
     </section>
 
-    <section id="right_column" class="col-8">
+    <section id="right_column" class="col-9">
         <h1>Fiche technique CSS</h1>
 
         <h2>Propriétés CSS</h2>
@@ -74,13 +62,13 @@
                         align-items
                     </td>
                     <td>
-                        Alignement des objets sur l'axe secondaire de leur conteneur.
+                        Alignement des objets sur l'axe secondaire.
                     </td>
                     <td>
                         <div class="example_blocks" style="align-items:center;">
-                            <div style="width:20px; height:20px; background-color:red;"></div>
-                            <div style="width:20px; height:20px; background-color:green;"></div>
-                            <div style="width:20px; height:20px; background-color:blue;"></div>
+                            <div style="width:20px; height:20px; margin:1px; background-color:red;"></div>
+                            <div style="width:20px; height:20px; margin:1px; background-color:green;"></div>
+                            <div style="width:20px; height:20px; margin:1px; background-color:blue;"></div>
                         </div>
                     </td>
                 </tr>
@@ -92,8 +80,8 @@
                         Couleur de l'arrière-plan.
                     </td>
                     <td>
-                        <div class="example_blocks">
-                            <p style="text-align:center; color:white; padding-top:38px;">Du texte</p>
+                        <div class="example_blocks" style="background-color:grey;">
+                            <p style="text-align:center; color:white; padding-top:28px;">Du texte</p>
                         </div>
                     </td>
                 </tr>
@@ -119,7 +107,7 @@
                     </td>
                     <td>
                         <div class="example_blocks" style="align-items:center; justify-content:center;">
-                            <div style="border:2px dashed grey; width:75px; height:75px;"></div>
+                            <div style="border:2px dashed grey; width:75px; height:75px; background-color:lightgrey;"></div>
                         </div>
                     </td>
                 </tr>
@@ -128,7 +116,7 @@
                         color
                     </td>
                     <td>
-                        Couleur de l'avant plan (texte, par exemple).
+                        Couleur de l'avant plan (celle du texte par exemple).
                     </td>
                     <td>
                         <div class="example_blocks">
@@ -158,7 +146,7 @@
                     </td>
                     <td>
                         <div class="example_blocks">
-                            <p style="text-align:center; color:black; padding-top: 24px; font-size:18px">Du texte</p>
+                            <p style="text-align:center; color:black; font-size:18px">Du texte plus grand</p>
                         </div>
                     </td>
                 </tr>
@@ -180,11 +168,26 @@
                         font-weight
                     </td>
                     <td>
-                        Mise en gras ou extra-gras (extra-bold).
+                        Mise en gras ou extra-gras.
                     </td>
                     <td>
                         <div class="example_blocks">
                             <p style="text-align:center; color:black; padding-top: 18px; font-weight:bold;">Du texte en gras</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr id="height">
+                    <td>
+                        height
+                    </td>
+                    <td>
+                        Hauteur de l'élément.
+                    </td>
+                    <td>
+                        <div class="example_blocks">
+                            <div style="width:20px; height:40px; margin:1px; background-color:red;"></div>
+                            <div style="width:20px; height:20px; margin:1px; background-color:green;"></div>
+                            <div style="width:20px; height:60px; margin:1px; background-color:blue;"></div>
                         </div>
                     </td>
                 </tr>
@@ -193,131 +196,117 @@
                         justify-content
                     </td>
                     <td>
-                        Alignement des objets sur l'axe principal de leur conteneur.
+                        Alignement des objets sur l'axe principal.
                     </td>
                     <td>
                         <div class="example_blocks" style="justify-content:center;">
-                            <div style="width:20px; height:20px; background-color:red;"></div>
-                            <div style="width:20px; height:20px; background-color:green;"></div>
-                            <div style="width:20px; height:20px; background-color:blue;"></div>
+                            <div style="width:20px; height:20px; margin:1px; background-color:red;"></div>
+                            <div style="width:20px; height:20px; margin:1px; background-color:green;"></div>
+                            <div style="width:20px; height:20px; margin:1px; background-color:blue;"></div>
                         </div>
                     </td>
                 </tr>
-            </tbody>
-        </table>
-
-        <h2>Sélecteurs CSS</h2>
-        <table class="table table-striped">
-            <thead class="bold">
-                <tr>
+                <tr id="margin">
                     <td>
-                        Noms
+                        margin
                     </td>
                     <td>
-                        Descriptions
+                        Marges extérieures de l'élément.
                     </td>
                     <td>
-                        Exemples
+                        <div class="example_blocks" style="align-items:center; justify-content:center;">
+                            <div style="border:2px dashed grey; width:75px; height:75px; display:flex; align-items:center; justify-content:center;">
+                                <div style="border:2px solid grey; width:50px; height:50px; background-color:lightgrey;"></div>
+                            </div>
+                        </div>
                     </td>
                 </tr>
-            </thead>
-            <tbody>
-                <tr>
+                <tr id="overflow">
                     <td>
-                        cellule 1
+                        overflow
                     </td>
                     <td>
-                        cellule 2
+                        Présence/absence des ascenseurs.
+                    </td>
+                    <td>
+                        <div class="example_blocks" style="align-items:center; justify-content:center;">
+                            <div style="border:2px solid grey; width:75px; height:75px; overflow-y:scroll;">
+                                <p>Du texte</p>
+                                <p>Du texte</p>
+                                <p>Du texte</p>
+                                <p>Du texte</p>
+                                <p>Du texte</p>
+                                <p>Du texte</p>
+                                <p>Du texte</p>
+                                <p>Du texte</p>
+                                <p>Du texte</p>
+                                <p>Du texte</p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr id="padding">
+                    <td>
+                        padding
+                    </td>
+                    <td>
+                        Marges intérieures de l'élément.
+                    </td>
+                    <td>
+                        <div class="example_blocks" style="align-items:center; justify-content:center;">
+                            <div style="border:2px solid grey; width:75px; height:75px; display:flex; align-items:center; justify-content:center; background-color:lightgrey;">
+                                <div style="border:2px dashed grey; width:50px; height:50px;"></div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr id="text-align">
+                    <td>
+                        text-align
+                    </td>
+                    <td>
+                        Détermine l'alignement horizontal du texte à l'intérieur d'un élément.
                     </td>
                     <td>
                         <div class="example_blocks">
-
+                            <p style="text-align:center; color:black; padding-top: 10px; text-align:justify; font-size:10px;">Du texte justifié pour que les lignes soient à la même longueur</p>
                         </div>
                     </td>
                 </tr>
-                <tr>
+
+                <tr id="text-decoration">
                     <td>
-                        cellule 1
+                        text-decoration
                     </td>
                     <td>
-                        cellule 2
+                        Soulignement ou rayure du texte.
                     </td>
                     <td>
                         <div class="example_blocks">
-
+                            <p style="text-align:center; color:black; padding-top: 18px; font-size:14px; text-decoration:underline;">Du texte souligné</p>
                         </div>
                     </td>
                 </tr>
+                <tr id="width">
+                    <td>
+                        width
+                    </td>
+                    <td>
+                        Largeur de l'élément.
+                    </td>
+                    <td>
+                        <div class="example_blocks" style="display:block;">
+                            <div style="width:20px; height:20px; margin:1px; width:40px; background-color:red;"></div>
+                            <div style="width:20px; height:20px; margin:1px; background-color:green;"></div>
+                            <div style="width:20px; height:20px; margin:1px; width:60px; background-color:blue;"></div>
+                        </div>
+                    </td>
+                </tr> 
             </tbody>
-    
         </table>
-
     </section>
 
 </section>
-
-<script>
-/*
-$(document).ready(function(){ //Lors d'un clic sur le div...
-    $("div").click(function(){ //...On inverse les classes de p
-        $("p").toggleClass("afficher cacher"); //Les éléments avec .afficher seront visibles
-        $(".afficher").show(); //Les éléments avec .cacher seront cachés
-        $(".cacher").hide();
-    });
-/*
-    $(document).ready( function(){
-        (function(){
-    $("#nav2 li a").click(function(){
-        $("#nav2 li a").removeClass("active");
-        $(this).addClass("active")
-    });
-    })[#red]()[/#];
-    }
-*/
-
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("Hello World!");
-  /*
-  $(".list-group a").removeClass("active");
-        (function(){
-            $(".list-group a").click(function(){
-                $(".list-group a").removeClass("active");
-                $(this).addClass("active");
-            });
-        });*/
-        /*
-        $(".list-group-item-action").removeClass("active");
-
-        (function(){
-            $(".list-group-item-action").click(function(){
-                $(".list-group-item-action").removeClass("active");
-                $(this).addClass("active")
-            });
-        });
-
-        $(".list-group").click(function(){ //...On inverse les classes de p
-            $(".list-group-item-action").toggleClass("active cacher"); //Les éléments avec .afficher seront visibles
-            $(".active").show(); //Les éléments avec .cacher seront cachés
-            $(".cacher").hide();
-        });*/
-});
-/*
-    $(document).ready(function(){
-        $(".list-group a").removeClass("active");
-        (function(){
-            $(".list-group a").click(function(){
-                $(".list-group a").removeClass("active");
-                $(this).addClass("active");
-            });
-        });
-    }
-*/
-</script>
-
-<!--
-<a href="#align-items" class="list-group-item list-group-item-action active" aria-current="true">align-items</a>
-<a href="#background-color" class="list-group-item list-group-item-action">background-color</a>
-*/-->
 
 </body>
 </html>
